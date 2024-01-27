@@ -21,9 +21,9 @@ class Background
 
 	private:
 		// Variables
-		std::vector<sf::Sprite>		  m_BackgroundVector;
+		std::vector<sf::Sprite>	      m_BackgroundVector;
 		std::unique_ptr<sf::Texture>  m_BackgroundTexture;
-		const sf::Vector2u			  m_WindowSize;
+		const sf::Vector2u	      m_WindowSize;
 
 	private:
 		// Functions
