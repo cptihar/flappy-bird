@@ -3,8 +3,8 @@
 
 #include <SFML/Graphics.hpp>
 
-#define PIPE_SCALE_VALUE   2.0f
-#define PIPE_GAP		  50.0f
+#define PIPE_SCALE_VALUE  2.0f
+#define PIPE_GAP	  50.0f
 
 class Pipe
 {
@@ -21,14 +21,14 @@ class Pipe
 		sf::Sprite&   getBottomSprite() { return m_BottomPipeSprite; }
 		sf::Sprite&   getTopSprite() { return m_TopPipeSprite; }
 		sf::Vector2f  getBothPositions() { return m_TopPipeSprite.getPosition(); }
-		const float	  getGapStartPosition() { return m_gapStartPosition; }
+		const float   getGapStartPosition() { return m_gapStartPosition; }
 
 	private:
 		// Variables
-		sf::Sprite	  m_TopPipeSprite;
-		sf::Sprite	  m_BottomPipeSprite;
+		sf::Sprite    m_TopPipeSprite;
+		sf::Sprite    m_BottomPipeSprite;
 		sf::Vector2f  m_PlayArea;
-		float		  m_gapStartPosition;
+		float	      m_gapStartPosition;
 
 	private:
 		// Functions
