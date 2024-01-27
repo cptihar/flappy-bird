@@ -8,7 +8,7 @@
 
 #define  PATH_TO_BACKGROUND_IMAGE  "res/BackgroundImage.png"
 #define  BACKGROUND_AMOUNT         2
-#define	 BACKGROUND_SPEED		   1.0f
+#define	 BACKGROUND_SPEED	   1.0f
 
 class Background
 {
