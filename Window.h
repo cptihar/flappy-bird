@@ -8,7 +8,7 @@
 #include "PipeManager.h"
 #include "Points.h"
 
-#define FPS		    60
+#define FPS	    60
 #define WN_WIDTH   300
 #define WN_HEIGHT  400
 
@@ -23,14 +23,14 @@ class Window
 	private:
 		// private variables, objects
 		sf::RenderWindow  m_Window;
-		sf::Event		  m_Event;
-		bool			  m_running;
-		bool			  m_spacePressed;
+		sf::Event	  m_Event;
+		bool		  m_running;
+		bool		  m_spacePressed;
 
-		Player			  m_Player;
-		Background		  m_Background;
-		PipeManager	      m_PipeManager;
-		xd::Points		  m_Points;
+		Player	     m_Player;
+		Background   m_Background;
+		PipeManager  m_PipeManager;
+		xd::Points   m_Points;
 
 	private:
 		// Private functions
