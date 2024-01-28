@@ -78,7 +78,7 @@ inline void Window::m_update()
 /*
 * ===============================
 * 
-* Renders the updated contents
+* Renders the game objects
 * Call happense every frame
 *
 * Return: void
