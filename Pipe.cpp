@@ -21,7 +21,7 @@ Pipe::~Pipe()
 /*
 * ==========================================
 * 
-* Renders the pipe
+* Renders the pipes
 * Parameter:
 *	-> sf::RenderTarget& (target surface)
 * 
@@ -39,7 +39,7 @@ void Pipe::renderPipes(sf::RenderTarget& target)
 /*
 * ========================================
 * 
-* Moves Bottom and top sprite
+* Moves the bottom and top sprites
 * Parameter:
 *	-> const sf::Vector2f value (speed)
 * 
