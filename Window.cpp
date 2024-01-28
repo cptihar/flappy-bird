@@ -30,14 +30,14 @@ void Window::MainLoop(void)
 }
 
 /*
-* ============================
+* ======================================
 * 
-* Updates the window
+* Updates the window and game objects
 * Call happense every frame
 * 
 * Return: void
 * 
-* ============================
+* ======================================
 */
 inline void Window::m_update()
 {
