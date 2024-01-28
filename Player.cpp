@@ -85,8 +85,8 @@ void Player::updatePlayer(const bool SpacePressed, const bool dead)
 */
 sf::Vector2f Player::getPlayArea()
 {
-	return sf::Vector2f( 2 * m_BirdSprite.getGlobalBounds().height, 
-		                 m_groundLevel - 3 * m_BirdSprite.getGlobalBounds().height);
+	return sf::Vector2f(2 * m_BirdSprite.getGlobalBounds().height, 
+		            m_groundLevel - 3 * m_BirdSprite.getGlobalBounds().height);
 }
 
 
@@ -122,7 +122,7 @@ void Player::m_initBirdSprite()
 void Player::m_setDefaultBirdPosition()
 {
 	m_BirdSprite.setPosition(m_BirdSprite.getGlobalBounds().width / 2,
-							 m_WindowSize.y / 2 - 2 * m_BirdSprite.getGlobalBounds().height);
+				 m_WindowSize.y / 2 - 2 * m_BirdSprite.getGlobalBounds().height);
 }
 
 
@@ -140,5 +140,5 @@ void Player::m_setDefaultBirdPosition()
 inline bool Player::m_isOutOfBounds()
 {
 	return (m_BirdSprite.getPosition().y < 0 ||
-		    m_BirdSprite.getPosition().y > m_groundLevel - m_BirdSprite.getGlobalBounds().height);
+		m_BirdSprite.getPosition().y > m_groundLevel - m_BirdSprite.getGlobalBounds().height);
 }
