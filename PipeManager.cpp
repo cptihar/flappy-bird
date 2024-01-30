@@ -38,6 +38,7 @@ void PipeManager::renderPipes(sf::RenderTarget& target)
 		p.renderPipes(target);
 }
 
+
 /*
 * ===============================================
 * 
@@ -66,14 +67,14 @@ void PipeManager::updatePipes(const sf::Sprite& player, bool& fucked)
 	}
 
 	// Player is alive
-	else if (!m_playerDead) {
+	else {
 		for (auto& p : m_PipeVector) {
 			p.movePipes({ -PIPE_SPEED, 0.0f });
 
 			// Check for intersection
 			if (p.getTopSprite().getGlobalBounds().intersects(player.getGlobalBounds()) ||
-			    p.getBottomSprite().getGlobalBounds().intersects(player.getGlobalBounds()) ||
-			    fucked) {
+				p.getBottomSprite().getGlobalBounds().intersects(player.getGlobalBounds()) ||
+				fucked) {
 
 				m_playerDead = true;
 				m_PipeVector.clear();
@@ -82,8 +83,8 @@ void PipeManager::updatePipes(const sf::Sprite& player, bool& fucked)
 			}
 		}
 
-		// Check whether the first Pipe is out of bounds
-		sf::Sprite s = m_PipeVector.front().getTopSprite(); // Cache sprite
+		// Check whetherthe first Pipe is out of bounds
+		sf::Sprite s = m_PipeVector.front().getTopSprite(); // Cache 1 sprite
 
 		// Check position
 		if (s.getPosition().x < -s.getGlobalBounds().width) {
